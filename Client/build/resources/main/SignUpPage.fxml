@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignUpController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0">
+         <children>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="700.0" prefWidth="1000.0">
+               <children>
+                  <Label layoutX="498.0" layoutY="26.0" prefHeight="82.0" prefWidth="309.0" text="Welcome to BattleShip" textFill="#125175" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="477.0" layoutY="544.0" mnemonicParsing="false" onAction="#signUp" prefHeight="50.0" prefWidth="355.0" style="-fx-background-color: #125175;" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <GridPane layoutX="479.0" layoutY="108.0" opacity="0.96" prefHeight="393.0" prefWidth="355.0" style="-fx-background-color: #125175; -fx-background-radius: 10;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="124.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="235.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <PasswordField fx:id="signinpassword" prefHeight="32.0" prefWidth="219.0" promptText="Enter  password" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <TextField fx:id="signinusername" focusTraversable="false" prefHeight="34.0" prefWidth="219.0" promptText="Enter username" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label prefHeight="41.0" prefWidth="147.0" text="Username" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="38.0" prefHeight="41.0" prefWidth="147.0" text="Password" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="signinemail" promptText="Enter Email" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="signinfirstname" promptText="Enter FirstName" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="signinlastname" promptText="Enter LastName" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Label layoutX="10.0" layoutY="38.0" prefHeight="41.0" prefWidth="147.0" text="Confirm" textFill="#f8f5f5" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Email" textFill="#f8f8f8" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="FirstName" textFill="WHITE" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="LastName" textFill="WHITE" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="signinconfirmpass" promptText="Confirm Password" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                        </PasswordField>
+                     </children>
+                  </GridPane>
+                  <Label fx:id="signinlabel1" graphicTextGap="0.0" layoutX="542.0" layoutY="512.0" />
+                  <ImageView fitHeight="710.0" fitWidth="370.0" layoutX="-19.0" layoutY="-18.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@images/LoginImage.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="561.0" layoutY="614.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="34.0" prefWidth="184.0" style="-fx-background-color: #125175;" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
